@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* Return a simple phrase */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
