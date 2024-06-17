@@ -2,6 +2,8 @@
 /**
  * main - Entry of the program
  * this functions print many exemple of how many bytes are differents types
+ *
+ *  Return: Zero = well executed
  */
 int main(void)
 {
