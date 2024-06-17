@@ -1,0 +1,2 @@
+#!/bin/bash
+for file in hello_world/*; do echo "#!/bin/bash" | cat - "$file" > temp && mv temp "$file"; done
