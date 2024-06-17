@@ -1,7 +1,8 @@
 #include <stdio.h>
-/* Return a simple phrase */
+
 int main(void)
 {
+	/*Return a simple phrase */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
