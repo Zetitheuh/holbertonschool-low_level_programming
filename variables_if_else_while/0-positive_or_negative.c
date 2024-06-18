@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doic for function main goes there */
+/*
+ * main - entry point of programm
+ * check if a random number is positive, negative or zero
+ */
 int main(void)
 {
 	int n;
