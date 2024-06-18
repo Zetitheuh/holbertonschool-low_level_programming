@@ -7,6 +7,8 @@
 /*
  * main - entry point of programm
  * check if a random number is positive, negative or zero
+ *
+ * Return: Zero = Well executed
  */
 int main(void)
 {
