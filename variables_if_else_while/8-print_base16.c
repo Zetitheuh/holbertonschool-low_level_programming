@@ -8,6 +8,7 @@
 int main(void)
 {
 	char i;
+	int f = 5
 
 	for (i = 0; i <= 9; i++)
 		putchar(i);
