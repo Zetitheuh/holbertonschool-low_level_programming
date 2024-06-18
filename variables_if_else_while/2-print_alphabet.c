@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *
- * main - Print alphabet
+ * main - Entry of the progrq;
+ * Description of what do
  *
  * Return: Program well executed
  **/
