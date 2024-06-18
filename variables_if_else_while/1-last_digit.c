@@ -30,4 +30,3 @@ int main(void)
 		printf("Last digit of %d is  %d  is and is greater than 5",n, last_number);
 	} 
 	return (0);
-}
