@@ -4,11 +4,11 @@
 /* more headers goes there */
 
 /* betty style doic for function main goes there */
-/*
- * main - entry point of programm
- * check if a random number is positive, negative or zero
+/**
+ * main - Entry of the program
+ * this functions print many exemple of how many bytes are differents types
  *
- * Return: Zero = Well executed
+ *  Return: Zero = well executed
  */
 int main(void)
 {
