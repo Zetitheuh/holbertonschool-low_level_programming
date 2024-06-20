@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
  * main - Entry of prog
  * write putchar using fonction from main.h
