@@ -1,11 +1,18 @@
 #include "main.h"
+/**
+ * print the alphabet
+ */
+void print_alphabet(void)
+{
+	char lettre;
 
-void print_alphabet(void) {
-    char lettre;
+	lettre = 'a'
 
-    for (lettre = 'a'; lettre <= 'z'; lettre++) {
-        _putchar(lettre);
-    }
-    _putchar('\n');  // Imprime une nouvelle ligne après l'alphabet
+	while (lettre <= 'z')
+	{
+		_putchar(lettre);
+		lettre++
+	}
+	_putchar('\n');
 }
 
