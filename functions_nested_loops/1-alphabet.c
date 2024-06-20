@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-    void print_alphabet(void)
+    void print_alphabet()
     {
 	    char lettre;
 
 	    for(lettre = 'a'; lettre <= 'z'; lettre++)
 	    {
-		    _putchar(lettre);
+		  _putchar(lettre);
 	    }
     }
     return (0);
