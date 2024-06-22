@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - function mes couilles
+ * print_alphabet - function
  * print the alphabet X10
  */
 void print_alphabet_x10(void)
@@ -14,4 +14,17 @@ void print_alphabet_x10(void)
 	}
 
 	_putchar('\n');
+}
+void print_alphabet(void)
+{
+    char c;
+    for (c = 'a'; c <= 'z'; c++)
+    {
+        _putchar(c);
+    }
+    _putchar('\n');
+}
+int _putchar(char c)
+{
+	putchar(c);
 }
