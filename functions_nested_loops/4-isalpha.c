@@ -1,9 +1,9 @@
 #include "main.h"
-
 /**
- * _isalplha - Check is letter or not
- * @c: The caracter to check
- * Return: 1 = letter else not the case
+ * _isalpha - prototype function
+ * @c: the caracter to check
+ *
+ * Return: 1 if lower and 0 if not
  */
 int _isalpha(int c)
 {
