@@ -1,8 +1,7 @@
 #include "main.h"
-
 /**
  * print_alphabet_x10 - print X10 alphabet
- * Description: retun the alphja 
+ * Description: retun the alpha
  * Return: void
  */
 void print_alphabet_x10(void)
