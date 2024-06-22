@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_jack_bauer_day - print minute
+ * jack_bauer - print minute
  * Description: print minute from 00 to 23:59
  */
-void print_jack_bauer_day(void)
+void jack_bauer(void)
 {
 	int hour;
 	int minute;
