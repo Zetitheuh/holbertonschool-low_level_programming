@@ -5,7 +5,7 @@
  * @c: The caracter to check
  * Return: 1 = letter else not the case
  */
-int _isalplha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
