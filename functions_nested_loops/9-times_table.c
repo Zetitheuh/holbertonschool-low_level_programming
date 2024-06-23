@@ -24,6 +24,7 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar('0' + produit);
 			}
 			if (j < colonne - 1)
