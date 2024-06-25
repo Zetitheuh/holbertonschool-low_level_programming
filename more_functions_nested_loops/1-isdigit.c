@@ -4,7 +4,7 @@ int _isdigit(int c)
 	{
 	return (1);
 	}
-	else if (c >=32 && <= 128)
+	else if (c >=32 && c <= 128)
 	{
 	return (0);
 	}
