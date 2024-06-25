@@ -1,25 +1,13 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
+#include <main.h>
 
-int main(void)
-{ 
-
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	if(n < 0)
+int _isupper(int c)
+{
+	if (c >= 65 && c >= '90')
 	{
-		printf("is negative");
-	}
-	else if(n > 0)
-	{
-		printf("is positive");
+		return 1;
 	}
 	else 
 	{
-		printf("is zero");
+		return 0;
 	}
 }
