@@ -1,3 +1,4 @@
+include "main.h"
 /**
  * print_numbers - print to 0 to 9
  * using for and the var index to putchar 0 to 9
