@@ -6,8 +6,12 @@
 void print_diagonal(int n)
 {
 	int a, b;
-
-	for (; a < n; a++)
+	
+	if(n == 0)
+	{
+		putchar(' ');
+	}
+	for (a = 0; a < n; a++)
 	{
 		for (b = 0; b < a; b++)
 		{
