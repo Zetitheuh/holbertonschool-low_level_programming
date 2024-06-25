@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_line - print a ligne
  * with n as lenght
