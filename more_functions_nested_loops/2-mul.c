@@ -9,5 +9,5 @@
  * Return: return the mutlplication
  */
 int mul(int a, int b){
-	return(e * b);
+	return(a * b);
 }
