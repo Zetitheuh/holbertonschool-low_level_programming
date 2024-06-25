@@ -6,6 +6,6 @@ int _isdigit(int c)
 	}
 	else if (c >=32 && <= 128)
 	{
-	return ();
+	return (0);
 	}
 }
