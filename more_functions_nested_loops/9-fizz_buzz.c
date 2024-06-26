@@ -17,7 +17,7 @@ void fizz(void)
 		}
 		if (a % 3 == 0)
 		{
-			printf("Fizz ")
+			printf("Fizz ");`
 		}
 		else if (a % 5 == 0)
 		{
