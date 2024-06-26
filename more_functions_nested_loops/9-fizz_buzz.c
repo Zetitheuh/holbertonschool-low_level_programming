@@ -33,3 +33,8 @@ void fizz(void)
 		}
 	}
 }
+int main(void)
+{
+	fizz();
+	return (0);
+}
