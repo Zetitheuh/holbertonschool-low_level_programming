@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * fizz - return 0 to 100
- * wih dif outpout for mutiple of 5 and 3 
+ * wih dif outpout for mutiple of 5 and 3
  */
 void fizz(void)
 {
