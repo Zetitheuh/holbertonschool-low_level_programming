@@ -29,6 +29,7 @@ void fizz(void)
 			printf(" ");
 		}
 	}
+	printf("\n");
 }
 int main(void)
 {
