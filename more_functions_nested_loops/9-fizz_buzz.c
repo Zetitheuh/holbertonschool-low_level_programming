@@ -25,7 +25,7 @@ void fizz(void)
 		}
 		if (a < 101)
 		{
-			printf(" ");
+			printf("\n");
 		}
 
 	}
