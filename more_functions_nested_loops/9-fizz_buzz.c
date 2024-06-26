@@ -14,22 +14,22 @@ void fizz(void)
 		if (a % 3 == 0)
 		{
 			printf("Fizz");
-			_putchar(' ');
+			printf(' ');
 		}
 		else if (a % 5 == 0)
 		{
 			printf("Buzz");
-			_putchar(' ');
+			printf(' ');
 		}
 		else if (a % 3 == 0 && a % 5 == 0)
 		{
 			printf("FIzzBuzz");
-			_putchar(' ');
+			printf(' ');
 		}
 		else
 		{
 			printf("%d", a);
-			_putchar(' ');
+			printf(' ');
 		}
 	}
 }
