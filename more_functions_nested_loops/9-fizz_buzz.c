@@ -1,10 +1,5 @@
-#include "main.h"
 #include <stdio.h>
 
-/**
- * fizz - return 1 to 100
- * with check if division by 3 and 5 return 0
- */
 void fizz(void)
 {
 	int a;
@@ -13,21 +8,26 @@ void fizz(void)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (a % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (a % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
+
 		else
-	       	{
+		{
 			printf("%d", a);
+		}
+		if (a < 100)
+		{
 			printf(" ");
 		}
+
 	}
 }
 int main(void)
