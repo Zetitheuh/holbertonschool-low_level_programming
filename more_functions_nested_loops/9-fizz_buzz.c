@@ -13,18 +13,15 @@ void fizz(void)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("FizzBuzz");
-			printf(" ");
+			printf("FizzBuzz ");
 		}
 		if (a % 3 == 0)
 		{
-			printf("Fizz");
-			printf(" ");
+			printf("Fizz ")
 		}
 		else if (a % 5 == 0)
 		{
-			printf("Buzz");
-			printf(" ");
+			printf("Buzz ");
 		}
 		else
 		{
