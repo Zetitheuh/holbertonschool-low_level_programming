@@ -23,14 +23,14 @@ void fizz(void)
 		{
 			printf("Buzz ");
 		}
-		else if
-		{
-			printf("%d", a);
-			printf(" ");
-		}
 		else if (a == 101)
 		{
 			printf("\n")
+		}
+		else
+	       	{
+			printf("%d", a);
+			printf(" ");
 		}
 	}
 }
