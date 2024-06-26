@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * fizz - return 0 to 100
+ * wih dif outpout for mutiple of 5 and 3 
+ */
 void fizz(void)
 {
 	int a;
@@ -31,6 +34,11 @@ void fizz(void)
 	}
 	printf("\n");
 }
+/**
+ * main - use fizz fonctioin
+ *
+ * Return: always zero
+ */
 int main(void)
 {
 	fizz();
