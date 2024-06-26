@@ -23,7 +23,7 @@ void fizz(void)
 		{
 			printf("%d", a);
 		}
-		if (a < 100)
+		if (a < 101)
 		{
 			printf(" ");
 		}
