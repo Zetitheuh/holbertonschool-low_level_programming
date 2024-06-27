@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _strcat - add two char
  * @dest : the first char
