@@ -12,5 +12,5 @@ int _strlen(char *s)
 		copie++;
 		compteur++;
 	}
-	return compteur;
+	return (compteur);
 }
