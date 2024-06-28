@@ -9,7 +9,7 @@ int _strlen(char *s)
 
 	while(*copie != "\0")
 	{
-		*copie++;
+		copie++;
 		compteur++;
 	}
 	return compteur;
