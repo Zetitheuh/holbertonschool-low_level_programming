@@ -3,13 +3,14 @@
  * @s : the string to reverse
  */
 void print_rev(char s)
-{
+{	int compteur;
 	char *premier_char = s;
 	while(*s != '\0')
 	{	
 		s++;
+		compteur++;
 	}
-	while(*s !+ premier_char)
+	while(compteur != 0)
 	{
 		printf("%c", *premier_char)
 		premier_char--;
