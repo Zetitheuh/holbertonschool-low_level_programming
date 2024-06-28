@@ -1,5 +1,5 @@
 /**
- * swap int - swap tzo int
+ * swap_int - swap tzo int
  * @a : the first one
  * @b : the second
  */
