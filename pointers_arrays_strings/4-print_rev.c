@@ -12,7 +12,8 @@ void print_rev(char s)
 	}
 	while (compteur > 0)
 	{
-		compteur--
+		compteur--;
 		_putchar(s[compteur]);
 	}
 	_putchar('\n');
+}
