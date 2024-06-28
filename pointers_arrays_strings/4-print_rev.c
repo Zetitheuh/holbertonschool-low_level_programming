@@ -3,7 +3,7 @@
  * print_rev - print in reverse
  * @s : the string to reverse
  */
-void print_rev(char s)
+void print_rev(char *s)
 {	int compteur;
 
 	while (s[compteur] != '\0')
