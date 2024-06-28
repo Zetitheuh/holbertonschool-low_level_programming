@@ -4,7 +4,7 @@
  * @s : the string to reverse
  */
 void print_rev(char *s)
-{	int compteur;
+{	int compteur = 0;
 
 	while (s[compteur] != '\0')
 	{
