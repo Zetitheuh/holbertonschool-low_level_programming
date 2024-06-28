@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _puts - print a string
  * @str: The string to print
