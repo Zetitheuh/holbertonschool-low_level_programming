@@ -15,3 +15,4 @@ void rev_string(char *s)
 		counter--;
 		*s = s[counter];
 	}
+}
