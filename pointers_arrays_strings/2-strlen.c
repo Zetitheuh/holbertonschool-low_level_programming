@@ -4,7 +4,7 @@
  */
 int _strlen(char *s)
 {
-	char *copie = &s;
+	char *copie = s;
 	int compteur = 0;
 
 	while(*copie != '\0')
