@@ -4,7 +4,7 @@
  */
 void print_rev(char s)
 {
-	premier_char = s;
+	char *premier_char = s;
 	while(*s != '\0')
 	{	
 		s++;
