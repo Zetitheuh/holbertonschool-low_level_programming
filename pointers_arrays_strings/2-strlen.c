@@ -1,6 +1,7 @@
 /**
  * _strlen - check the lenght of a *char
  * @s : The char to check
+ * Return: return the lenght
  */
 int _strlen(char *s)
 {
