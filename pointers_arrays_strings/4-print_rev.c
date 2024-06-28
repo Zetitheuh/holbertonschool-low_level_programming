@@ -1,19 +1,18 @@
+#include "main.h"
 /**
  * print_rev - print in reverse
  * @s : the string to reverse
  */
 void print_rev(char s)
 {	int compteur;
-	char *premier_char = s;
-	while(*s != '\0')
-	{	
-		s++;
+
+	while (s[compteur] != '\0')
+	{
 		compteur++;
 	}
-	while(compteur != 0)
+	while (compteur > 0)
 	{
-		printf("%c", *premier_char)
-		premier_char--;
+		compteur--
+		_putchar(s[compteur]);
 	}
-
-}
+	_putchar('\n');
