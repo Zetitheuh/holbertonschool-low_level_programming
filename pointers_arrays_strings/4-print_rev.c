@@ -10,7 +10,7 @@ void print_rev(char *s)
 	{
 		compteur++;
 	}
-	while (compteur > 0)
+	while (compteur >= 0)
 	{
 		compteur--;
 		_putchar(s[compteur]);
