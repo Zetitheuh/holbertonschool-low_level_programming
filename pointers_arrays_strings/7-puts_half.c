@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * puts_half - print alph of a char
  * @str : the char
