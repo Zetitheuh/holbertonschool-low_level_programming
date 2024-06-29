@@ -10,16 +10,16 @@ void puts_half(char *str)
         {
             for (int i = 0; i < counter / 2; i++)
             {
-                putchar(str[i]);
+                _putchar(str[i]);
             }
         }
         else
         {
             for (int i = 0; i < counter / 2; i++)
             {
-                putchar(str[i]);
+                _putchar(str[i]);
                 i++;
-                 putchar(str[i]);
+                 _putchar(str[i]);
             }
         }
 }
