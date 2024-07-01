@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strchr - print a pointer started by letter c
  * @s: the char pointer
