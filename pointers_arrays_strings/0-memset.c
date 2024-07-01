@@ -1,7 +1,9 @@
+#include "main.h"
 /**
- * _memset : change the memory pointed by s
+ * _memset - change the memory pointed by s
  * @b: what fill the memory
  * @n: no idea
+ * @s: the pointer
  * Return: Return the a pointer to the memory area
  */
 char *_memset(char *s, char b, unsigned int n)
