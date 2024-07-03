@@ -1,3 +1,11 @@
+#include "main.h"
+/**
+ * _memcpy - fait un truc
+ * @dest: un quetru
+ * @src: un autre quetru
+ * @n: dermier quetru
+ * Return
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
@@ -6,4 +14,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		src[i] = dest[i];
 	}
+	Return dest;
 }
