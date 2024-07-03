@@ -4,7 +4,7 @@
  * @dest: un quetru
  * @src: un autre quetru
  * @n: dermier quetru
- * Return
+ * Return: retirm dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -14,5 +14,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		src[i] = dest[i];
 	}
-	Return dest;
+	return (dest);
 }
