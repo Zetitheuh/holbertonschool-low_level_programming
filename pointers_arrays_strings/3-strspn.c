@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strspn - check how many caractere are in s
  * @s: the string checked
@@ -22,4 +23,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 
 	}
+	return (counter);
 }
