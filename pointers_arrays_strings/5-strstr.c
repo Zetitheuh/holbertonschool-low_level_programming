@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strstr - find if needle is in haystack
  * @haystack: the haystack we looking in
