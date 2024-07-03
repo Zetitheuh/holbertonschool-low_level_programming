@@ -1,32 +1,30 @@
 /**
- * _strspn - check how many char in common
- * @s: the first char ze checked
- * @accept: The second one
+ * _strstr - find if needle is in haystack
+ * @haystack: the haystack we looking in
+ * @needle: The string to find in haystack
  *
- * Return: The nomber of letter in commom
+ * Return: the word in common in haystack and needle
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int compteur = 0;
-	int i, j = 0;
-	int found;
+	if (*needle == '\0')
+	{
+		return (haystack);
+	}
+	for (; *haystack != '\0'; haystack++)
+	{
+	char *h = haystack;
+	char *n = needle;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	found = 0;
-	for (j = 0; accept[j] != '\0'; j++)
-	{
-		if (s[i] == accept[j])
+		while (*h == *n && *n != '\0')
 		{
-			found = 1;
-			break;
+			h++;
+			n++;
+		}
+		if (*n == '\0')
+		{
+			return (haystack);
 		}
 	}
-	if (!found)
-	{
-		break;
-		}
-		compteur++;
-	}
-	return (compteur);
-
+	return (NULL);
+}
