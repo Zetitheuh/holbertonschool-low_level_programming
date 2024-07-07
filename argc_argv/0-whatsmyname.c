@@ -8,11 +8,13 @@
 
 int main(int argc, char *argv[])
 {
+	char *nom;
 	if (argc != 2)
 	{
 		return (1);
 	}
-	char *nom = argv[1];
+
+	nom = argv[1];
 
 	printf("%s\n", nom);
 	return (0);
