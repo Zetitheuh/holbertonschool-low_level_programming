@@ -3,22 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-	int a = 0;
-	int b = 0;
-	int result;
+	int n = atoi(argv[1]) * atoi(argv[2])
 
 	(void)argv;
 	if (argc != 3)
 	{
-		printf("ERROR");
-		printf("\n");
+		printf("ERROR\n");
 		return (1);
 	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	result = a * b;
-	printf("%d\n", result);
+	
+	printf("%d\n", n);
 	return (0);
 
 }
