@@ -1,3 +1,9 @@
+/**
+ * main - mutliplie two integers
+ * @argc: number of arguments
+ * @argv: Type of arguments
+ * Return: 1 if less than two arguments
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
