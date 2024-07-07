@@ -8,15 +8,6 @@
 
 int main(int argc, char *argv[])
 {
-	char *nom;
-
-	if (argc != 1)
-	{
-		return (1);
-	}
-
-	nom = argv[0];
-
-	printf("%s\n", nom);
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
