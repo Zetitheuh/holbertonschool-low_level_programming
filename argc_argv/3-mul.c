@@ -3,7 +3,9 @@
 
 int main(int argc, char *argv[])
 {
-	int n = atoi(argv[1]) * atoi(argv[2])
+	int a = 0;
+	int b = 0;
+	int result;
 
 	(void)argv;
 	if (argc != 3)
@@ -11,8 +13,10 @@ int main(int argc, char *argv[])
 		printf("ERROR\n");
 		return (1);
 	}
-	
-	printf("%d\n", n);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	result = a * b;
+	printf("%d\n", result);
 	return (0);
 
 }
