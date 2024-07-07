@@ -1,3 +1,9 @@
+/**
+ * main - print all argv arguments
+ * @argc: the number of arguments
+ * @argv: the type of argument
+ * Return: 0
+ */
 #include <stdio.h>
 
 int main(int argc, char *argv[])
