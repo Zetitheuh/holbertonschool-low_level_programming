@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void free_grid(int **grid, int height) {
+    if (grid == NULL) {
+        return;
+    }
+
+    // Libérer chaque ligne du tableau
+    for (int i = 0; i < height; i++) {
+        free(grid[i]);
+    }
+
+    // Libérer le tableau principal (tableau de pointeurs)
+    free(grid);
+}
 /**
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
