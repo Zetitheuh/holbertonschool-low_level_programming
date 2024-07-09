@@ -1,3 +1,8 @@
+/**
+ * _strdup - Duplicate a *char
+ * @str: The char we looking to duplicate
+ * Return: Return the copy
+ */
 #include <stdlib.h>
 #include <string.h>
 

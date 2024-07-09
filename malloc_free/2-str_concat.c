@@ -1,3 +1,9 @@
+/**
+ * str_concat - concat two *char
+ * @s1: the first char
+ * @s2: Theh second one
+ * Return: Return the contatened result
+ */
 #include <stdlib.h>
 #include <string.h>
 
