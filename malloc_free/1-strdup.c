@@ -1,27 +1,31 @@
-/**
- * _strdup - Duplicate a *char
- * @str: The char we looking to duplicate
- * Return: Return the copy
- */
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-char *_strdup(char *str) {
-    // Vérifier si str est NULL
-    if (str == NULL) {
-        return NULL;
-    }
+/**
+ * _strdup - copy string in another memory place
+ * @str: string
+ * Description: take str, allow same memory size and copy it
+ * Return: new string or null
+ */
+char *_strdup(char *str)
+{
+	int i;
+	char *temp = malloc(sizeof(char) * sizeof(str));
 
-    // Obtenir la longueur de la chaîne str
-    size_t len = strlen(str);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
-    // Allouer de la mémoire pour la copie de la chaîne (incluant le caractère nul)
-    char *copy = (char *)malloc((len + 1) * sizeof(char));
-    if (copy == NULL) {
-        return NULL; // Échec de l'allocation
-    }
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		temp[i] = str[i];
+	}
+	temp[i] = '\0';
 
-    // Copier la chaîne str dans la mémoire allouée
-    strcpy(copy, str);
-
-    return copy;
+	if (temp == NULL)
+	{
+		return (NULL);
+	}
+	return (temp);
+}
