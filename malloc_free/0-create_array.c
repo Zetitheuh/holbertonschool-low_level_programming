@@ -1,27 +1,30 @@
-#include <main.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
- * create_array - create an array of char
- * @size: The size of the array
- * @c: the type of tab element
- * Return: Return the array
+ * create_array - create an array define in the main
+ * @size: size of the array
+ * @c: default character
+ * Description: malloc the size of char in a array of size with c initialized
+ * Return: the array of char
  */
-char *create_array(unsigned int size, char c) {
-    // Vérifier si size est égal à 0
-    if (size == 0) {
-        return NULL;
-    }
+char *create_array(unsigned int size, char c)
+{
+	char *array;
+	unsigned int i;
 
-    //allocate memory for the char array
-    char *arr = (char *)malloc(size * sizeof(char));
-    if (arr == NULL) {
-        return NULL; // Échec de l'allocation
-    }
+		if (size == 0)
+	{
+		return NULL;
+	}
+	array = malloc(sizeof(char) * size);
 
-    // init each element of the tab with a char c
-    for (unsigned int i = 0; i < size; i++) {
-        arr[i] = c;
-    }
-    //Return the array
-    return arr;
+	for (i = 0 ; i < size; i++)
+	{
+		array[i] = c;
+	}
+	if (array == NULL)
+	{
+		return NULL;
+	}
+	return (array);
 }
