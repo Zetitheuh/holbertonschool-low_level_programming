@@ -1,31 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * _strdup - copy string in another memory place
- * @str: string
- * Description: take str, allow same memory size and copy it
- * Return: new string or null
+ * str_concat - concatenate 2 string in another
+ * @s1: string 1
+ * @s2: string 2
+ * Description: take 2 string and copy char by char
+ * Return: null or new_string
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	int i;
-	char *temp = malloc(sizeof(char) * sizeof(str));
+	int i, j;
+	char *array;
 
-	if (str == NULL)
+
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (s2 == NULL )
 	{
-		temp[i] = str[i];
+		s2 = "";
 	}
-	temp[i] = '\0';
 
-	if (temp == NULL)
-	{
-		return (NULL);
-	}
-	return (temp);
-}
+	array = malloc(sizeof(char) * (sizeof(s1) - 1) + sizeof(s2));
+
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			array[i] = s1[i];
+		}
+		for (j = 0; s2[j] != '\0'; i++, j++)
+		{
+			array[i] = s2[j];
+		}
+		array[i] = '\0';
+
+		if (array == NULL)
+		{
+			return (NULL);
+		}
+
+		return (array);
