@@ -1,39 +1,45 @@
-/**
- * alloc_grid - Allocates a 2D array of integers
- * @width: Width of the grid
- * @height: Height of the grid
- *
- * Return: Pointer to the allocated 2D array (grid), or NULL on failure
- */
+#include <stdio.h>
 #include <stdlib.h>
+/**
+ * alloc_grid - create a 2d array initialized to 0
+ * @width: widht of the array
+ * @height: height of the array
+ * Description: initialise the height first then the width
+ * Return: if error free space alloced and null, if ok array2d
+ */
+int **alloc_grid(int width, int height)
+{
+	int i, j;
+	int **array2d;
 
-int **alloc_grid(int width, int height) {
-    if (width <= 0 || height <= 0) {
-        return NULL;  // Vérifie si les dimensions sont valides
-    }
+	if (height == 0 || width == 0)
+	{
+		return (NULL);
+	}
 
-    // Allouer le tableau de pointeurs (tableau principal)
-    int **grid = (int **)malloc(height * sizeof(int *));
-    if (grid == NULL) {
-        return NULL;  // Échec de l'allocation du tableau principal
-    }
+	array2d = malloc(height * sizeof(int *));
 
-    // Allouer et initialiser chaque ligne du tableau bidimensionnel
-    for (int i = 0; i < height; i++) {
-        grid[i] = (int *)malloc(width * sizeof(int));
-        if (grid[i] == NULL) {
-            // Échec de l'allocation d'une ligne, libérer la mémoire précédemment allouée
-            for (int j = 0; j < i; j++) {
-                free(grid[j]);
-            }
-            free(grid);
-            return NULL;
-        }
-        // Initialiser la ligne à zéro
-        for (int j = 0; j < width; j++) {
-            grid[i][j] = 0;
-        }
-    }
+	for (i = 0; i < height; i++)
+	{
+		array2d[i] = malloc(width * sizeof(int));
+	}
 
-    return grid;  // Retourner le tableau bidimensionnel alloué
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			array2d[i][j] = 0;
+			if (array2d[i] == NULL)
+			{
+				for (j = 0; j < i; j++)
+				{
+				free(array2d[j]);
+				}
+				free(array2d);
+				return (NULL);
+			}
+		}
+		j = 0;
+	}
+	return (array2d);
 }

@@ -1,20 +1,24 @@
-/**
- * free_grid - free each grid of a array
- * @grid: the grid
- * @height : The Columns
- */
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+/**
+ * free_grid - free memory for a 2d array
+ * @grid: pointer on array's
+ * @height: number of adress of array's
+ * Description: take grid and free all cases allowed then free grind
+ * Return: nothing
+ */
+void free_grid(int **grid, int height)
+{
+	int i;
 
-void free_grid(int **grid, int height) {
-    if (grid == NULL) {
-        return;  // Si grid est NULL, il n'y a rien à libérer
-    }
+	if (grid != NULL)
+	{
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
 
-    // Libérer chaque ligne de la grille
-    for (int i = 0; i < height; i++) {
-        free(grid[i]);
-    }
-
-    // Libérer le tableau de pointeurs principal
-    free(grid);
+	free(grid);
+	}
 }

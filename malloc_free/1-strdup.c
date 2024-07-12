@@ -1,27 +1,43 @@
-/**
- * _strdup - Duplicate a *char
- * @str: The char we looking to duplicate
- * Return: Return the copy
- */
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+/**
+ * str_concat - concatenate 2 string in another
+ * @s1: string 1
+ * @s2: string 2
+ * Description: take 2 string and copy char by char
+ * Return: null or new_string
+ */
+char *str_concat(char *s1, char *s2)
+{
+	int i, j;
+	char *array;
 
-char *_strdup(char *str) {
-    // Vérifier si str est NULL
-    if (str == NULL) {
-        return NULL;
-    }
 
-    // Obtenir la longueur de la chaîne str
-    size_t len = strlen(str);
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 
-    // Allouer de la mémoire pour la copie de la chaîne (incluant le caractère nul)
-    char *copy = (char *)malloc((len + 1) * sizeof(char));
-    if (copy == NULL) {
-        return NULL; // Échec de l'allocation
-    }
+	if (s2 == NULL )
+	{
+		s2 = "";
+	}
 
-    // Copier la chaîne str dans la mémoire allouée
-    strcpy(copy, str);
+	array = malloc(sizeof(char) * (sizeof(s1) - 1) + sizeof(s2));
 
-    return copy;
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			array[i] = s1[i];
+		}
+		for (j = 0; s2[j] != '\0'; i++, j++)
+		{
+			array[i] = s2[j];
+		}
+		array[i] = '\0';
+
+		if (array == NULL)
+		{
+			return (NULL);
+		}
+
+		return (array);
