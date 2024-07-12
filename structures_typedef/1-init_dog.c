@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
 /**
  * init_dog - take data and initialise a structure dog with name/age/owner
  * @d: pointer to struct dog
