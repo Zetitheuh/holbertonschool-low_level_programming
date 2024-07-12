@@ -5,10 +5,9 @@
  * @d: pointer to struct dog
  * Return: void
  */
-
 void print_dog(struct dog *d)
 {
-    if (d==NULL)
+    if (d == NULL)
     {
         return;
     }
@@ -20,8 +19,7 @@ void print_dog(struct dog *d)
     {
         printf("%s\n", d->name);
     }
-   
-    if (d->age == NULL)
+    if (d->age < 0)
     {
         printf("(nil)\n");
     }
@@ -29,7 +27,6 @@ void print_dog(struct dog *d)
     {
         printf("%f\n", d->age);
     }
-    
     if (d->owner == NULL)
     {
         printf("(nil)\n");
@@ -38,5 +35,4 @@ void print_dog(struct dog *d)
     {
         printf("%s\n", d->owner);
     }
-    
 }
