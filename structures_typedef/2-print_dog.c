@@ -12,7 +12,19 @@ void print_dog(struct dog *d)
     {
         return;
     }
+    if (d->name == NULL)
+    {
+        return;
+    }
     printf("%s\n", d->name);
+    if (d->age == NULL)
+    {
+        return;
+    }
     printf("%f\n", d->age);
+    if (d->owner == NULL)
+    {
+        return;
+    }
     printf("%s\n", d->owner);
 }
