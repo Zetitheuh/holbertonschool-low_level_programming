@@ -6,7 +6,7 @@ print_dog - Print all element of a dog
  Return: void*/
 void print_dog(struct dog *d)
 {
-    printf("%s\n", my_dog.name);
-    printf("%f\n", my_dog.age);
-    printf("%s\n", my_dog.owner);
+    printf("%s\n", *d.name);
+    printf("%f\n", *d.age);
+    printf("%s\n", *d.owner);
 }
